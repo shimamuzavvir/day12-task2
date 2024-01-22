@@ -3,50 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Survey Form</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-                .page{
-            height: 500px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <div>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <i class="bi bi-github"></i>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-              </svg>
-          </a>
-          <div class="navbar-head col-6 font-weight-bold text-white-50">GITHUB</div>
-        </div>
-      </nav>
-      <div class="page">
-        <div class="container mt-5 h-100">
-            <div class="row  h-100 justify-content-around justify-content-md-between ">
-                <div class="col-sm-4 col-md-3  mx-lg-3 bg-dark " style="border-radius:20px"> </div>
-                <div class="col-sm-4 col-md-8  mx-md-3 h-100">
-                      <div class="row h-auto w-75 m-auto ">
-                        <input type="text" class=" bg-dark w-100 p-md-3  text-light " value="Search" style="border-radius:10px">
-    
-                    </div>
-                    <div class="row mt-4 h-50 justify-content-around">
-                        <div class="col bg-dark m-md-4 m-3  " style="border-radius:20px"></div>
-                        <div class="col bg-dark m-md-4 m-3" style="border-radius:20px"></div>
-                        <div class="col bg-dark m-md-4 m-3" style="border-radius:20px"></div>
-                    </div>
-                    <div class="row bg-dark w-100 h-25 mt-4 mb-0 mx-auto " style="border-radius:20px">
-                    </div>
-                </div>
-        
-                </div>
-      </div> 
-      </div>
-    </div>
+    <div class="container">
+    <form>
+            <label for="name"> <B>Name</B> <span style="color: red;">*</span> </label> <br>
+            <input type="text" name="name" id="name" placeholder="first name" class="lab-pad1"> 
+            <input type="text" name="name" id="name" placeholder="last name" class="lab-pad1"> <br>
+            <label for="email"> <B>Email</B> <span style="color: red;">*</span> </label> <br>
+            <input type="text" name="email" id="email" placeholder="enter your email" class="lab-pad"> <br>
+            <lable> <B>Your Experience </B><span style="color: red;">*</span> </lable> <br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>  
+        <p>Overall, how would you rate your experience with us?</p>
+          <label><B>how stasfied are you with </B><span style="color: red;">*</span> </label>
+           <table>
+            <thead>
+                <tr>
+                    <td>  </td>
+                    <td> Very unsatisfied </td>
+                    <td> Unsatisfied </td>
+                    <td> Neutral </td>
+                    <td> Satisfied </td>
+                    <td> Very satisfied </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="back-color">
+                    <td> <label for="" name="rate" id="purchase">Purchase</label> </td>
+                    <td>
+                        <input type="radio" name="rate" id="purchase">
+                    </td>
+                    <td>
+                        <input type="radio" name="rate" id="purchase">
+                    </td>
+                    <td>
+                        <input type="radio" name="rate" id="purchase">
+                    </td>
+                    <td>
+                        <input type="radio" name="rate" id="purchase">
+                    </td>
+                    <td>
+                        <input type="radio" name="rate" id="purchse">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="" name="rate" id="sevice">Sevice</label></td>
+                    <td>
+                        <input type="radio" name="rate" id="service">
+                    </td>
+                    <td>
+                        <input type="radio" name="rate" id="service">
+                    </td>
+                    <td>
+                        <input type="radio" name="rate" id="service">
+                    </td>
+                    <td>
+                        <input type="radio" name="rate" id="service">
+                    </td>
+                    <td>
+                        <input type="radio" name="rate" id="sevice">
+                    </td>
+                </tr>
+                <tr class="back-color">
+                    <td> <label for="" name="rate" id="comp"></label> Company Overall</td>
+                     <td>
+                        <input type="radio" name="rate" id="comp">
+                    </td>
+                    <td>
+                        <input type="radio" name="rate" id="comp">
+                    </td>
+                    <td>
+                        <input type="radio" name="rate" id="comp">
+                    </td>
+                    <td>
+                        <input type="radio" name="rate" id="comp">
+                    </td>
+                    <td>
+                        <input type="radio" name="rate" id="comp">
+                    </td> 
+                </tr>
+            </tbody>
+           </table>
+        <br>
+            <label> <B> How likely are you to </B> <span style="color: red;">*</span> </label>
+            <table>
+                <thead>
+                    <tr>
+                        <td> </td>
+                        <td><label for="rating-text" name="rate" class="form-label">Very Unlikely</label></td>
+                        <td><label for="rating-text" name="rate" class="form-label"> Unlikely</label></td>
+                        <td><label for="rating-text" name="rate" class="form-label">Neutral</label></td>
+                        <td><label for="rating-text" name="rate" class="form-label">Likely</label></td>
+                        <td><label for="rating-text" name="rate" class="form-label">Very Likely</label></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="back-color">
+                        <td>
+                            <label for="" name="rate" id="like">Buy from us again</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="rate" id="like">
+                        </td>
+                        <td>
+                            <input type="radio" name="rate" id="like">
+                        </td>
+                        <td>
+                            <input type="radio" name="rate" id="like">
+                        </td>
+                        <td>
+                            <input type="radio" name="rate" id="like">
+                        </td>
+                        <td>
+                            <input type="radio" name="rate" id="like">
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                            <label for="" name="rate" id="like"> Recommend our product to others</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="rate" id="like">
+                        </td>
+                        <td>
+                            <input type="radio" name="rate" id="like">
+                        </td>
+                        <td>
+                            <input type="radio" name="rate" id="like">
+                        </td>
+                        <td>
+                            <input type="radio" name="rate" id="like">
+                        </td>
+                        <td>
+                            <input type="radio" name="rate" id="like">
+                        </td>
 
+                     </tr>
+                     <tr class="back-color">
+                        <td>
+                            <label for="" name="rate" id="like"> Recommend our company to others</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="rate" id="like">
+                        </td>
+                        <td>
+                            <input type="radio" name="rate" id="like">
+                        </td>
+                        <td>
+                            <input type="radio" name="rate" id="like">
+                        </td>
+                        <td>
+                            <input type="radio" name="rate" id="like">
+                        </td>
+                        <td>
+                            <input type="radio" name="rate" id="like">
+                        </td>
+                     </tr>
+                </tbody>
+            </table> <br>
+            <label for="suggestions"> <B> Additional comments or suggestion </B> <span style="color: red;">*</span> </label>  
+            <textarea name="suggestions" id="suggestions" rows="5" style="width: 100%;"></textarea> 
+            <br>
+           <button type="submit">  Submit </button>
+    </form>
+    </div>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
 </body>
 </html>

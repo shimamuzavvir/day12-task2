@@ -1,0 +1,28 @@
+.container {
+    width: 100%;
+    padding: 5rem 0;
+    background-size: cover;
+    align-content: center;
+}
+.checked{
+    color: orange;
+}
+.back-color{
+    background-color: rgba(184, 170, 170, 0.144);
+    border-radius: 20px;
+}
+table{
+    margin-top: 1em;
+    font-family: 'Nanum Myeongjo', serif;
+    width: 100%;
+    text-align: center;
+    font-size: medium;
+    font-size: large;
+}
+    
+.lab-pad{
+    width: 60%;
+}
+.lab-pad1{
+    width: 30%;
+}
